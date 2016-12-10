@@ -8,7 +8,7 @@
   <title>HTML Portfolio</title>
 </head>
 <body>
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default navbar-static-top">
     <div class="container">
         <div class="navbar-header">
             <button type='button' class="navbar-toggle collapsed" data-toggle='collapse' data-target='#portfolio-collapse-menu'>
@@ -16,7 +16,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a href="#" class="navbar-brand">Iakimenko Pavel</a>
+            <a href="#" class="navbar-brand">Iakimenko Pavel <small>Web Developer</small></a>
         </div>
         <div class="collapse navbar-collapse" id="portfolio-collapse-menu">
             <ul class="nav navbar-nav navbar-right">
@@ -27,30 +27,81 @@
         </div>
     </div>
 </nav>
- <header class="header">
-    <h1>Iakimenko Pavel</h1>
-    <h2>Web Developer</h2>
- </header>
-   <section class="tagline">
-        <h3>Create with plesure</h3>
-        <p>Junior Web Developer with code in heart. Motto 'Do not stop learning!'</p>
-    </section>
-    <section class="skills">
-       <h3>Discover my Skills</h3>
-       <p>Make sites, web apps with:</p>
-        <ul>
-           <li>Html (Semantic)</li>
-           <li>CSS (sass)</li>
-           <li>Bootstrap</li>
-           <li>JavaScript</li>
-           <li>jQuery</li>
-       </ul>
-    </section>
-    <section class="contact">
+<div id="portfolio-carousel" class="carousel slide" data-ride='carousel'>
+<!--    Indicators   -->
+<ol class="carousel-indicators">
+    <li data-target="#portfolio-carousel" data-slide-to="1" class="active"></li>
+    <li data-target="#portfolio-carousel" data-slide-to="2"></li>
+    <li data-target="#portfolio-carousel" data-slide-to="3"></li>
+</ol>
+<div class="carousel-inner" role='listbox'>
+    <div class="item active">
+        <div class="container-fluid">
+           <img src="img/slide1.jpeg" alt="Web Development" class='img-responsive'>
+            <div class="carousel-caption">
+                <h1>Web Development</h1>
+                <p>It's creation something new, that can see and use thousands of people. <br>
+                Junior Web Developer with code in heart. Motto 'Do not stop learning!'.</p>
+            </div>
+        </div>
+    </div>
+    <div class="item">
+        <div class="container-fluid">
+           <img src="img/slide2.png" alt="Web Apps" class='img-responsive'>
+            <div class="carousel-caption">
+                <h1>Web Apps</h1>
+                <p>New Era of web pages, with great features!</p>
+            </div>
+        </div>
+    </div>
+    <div class="item">
+        <div class="container-fluid">
+           <img src="img/slide3.jpg" alt="Web design" class='img-responsive'>
+            <div class="carousel-caption">
+                <h1>Web design</h1>
+                <p>It's not mine..</p>
+            </div>
+        </div>
+    </div>
+</div>
+<a href="#portfolio-carousel" class="left carousel-control" role='button' data-slide='prev'>
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden='true'></span>
+    <span class="sr-only">Previous</span>
+</a>
+<a href="#portfolio-carousel" class="right carousel-control" role='button' data-slide='next'>
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden='true'></span>
+    <span class="sr-only">Next</span>
+</a>
+</div>
+<div class="marketing">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <span class="glyphicon glyphicon-blackboard"></span>
+                <h2>HTML&amp;CSS</h2>
+                <p>Semantic HTML markup and efficent CSS</p>
+            </div>
+            <div class="col-md-4">
+                <span class="glyphicon  glyphicon glyphicon-cog"></span>
+                <h2>PHP</h2>
+                <p>WEB's wheelhors</p>
+            </div>
+            <div class="col-md-4">
+                <span class="glyphicon glyphicon-fire"></span>
+                <h2>JavaScript</h2>
+                <p>Makes site Live!</p>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="container">
         <h3>You need to implement your idea?</h3>
-        <p>Contact me: <a href="https://twitter.com/psy8881">@psy8881</a></p>
-        
-    </section>
+         <p>Contact me: <a href="https://twitter.com/psy8881">@psy8881</a></p>
+    </div>
+</footer>
+
+  
   <!--
     Previous project placeholder ends
     (unused pieces will be deleted at the last task)
